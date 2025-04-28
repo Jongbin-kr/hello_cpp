@@ -17,6 +17,7 @@ int main() {
     cout << endl;
     
     // 이런식의 출력도 지원한다!
+    // NOTE: 단, 이건 크기 정보를 아니까 가능한거고 T* array; 이런 식으로 정의된 건 크기 정보를 모르니까 안된다.
     cout << "Array elementsv based on range-based loop: ";
     for (auto element : arr){
         cout << element << " ";

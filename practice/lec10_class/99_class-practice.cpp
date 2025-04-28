@@ -71,23 +71,8 @@ public:
 int main(){
     
 
-    SimpleVector<double> doubleVector = {1.2, 2.4, 3.7};
-    doubleVector.showElements();
-    doubleVector.getSize();
-    
-    
-    // pointer
-    SimpleVector<double>* ptr1 = &doubleVector;
-    ptr1->addElement(7.7);
-    ptr1->showElements();
-    ptr1->getSize();
-    
-    // unique pointer
-    std::unique_ptr<SimpleVector<int>> ptr2 = std::make_unique<SimpleVector<int>>(5);
-    // std::unique_ptr<SimpleVector<int>> ptr2(new SimpleVector<int>(10));
-    ptr2->addElement(1);
-    ptr2->addElement(10);
-    ptr2->showElements();
+    SimpleVector<int> vec1 = {1,2,3,4,5};
+    SimpleVector<int> vec2 = {100, 200, 300};
     
     
     
