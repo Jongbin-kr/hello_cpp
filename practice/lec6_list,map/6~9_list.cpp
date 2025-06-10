@@ -37,7 +37,9 @@ int main(){
     std::list<int> lst = {1,2,3,4,5};
     lst.push_back(6);
     lst.push_front(7);
+    lst.erase(1);
     print_list(lst);  // 7 1 2 3 3 5 6
+    
     
     
     // insert & delete using std::advance
